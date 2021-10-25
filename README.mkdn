@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/reneeb/Module-Znuny-CoreList.svg?branch=master)](https://travis-ci.org/reneeb/Module-Znuny-CoreList)
 [![Kwalitee status](https://cpants.cpanauthors.org/dist/Module-Znuny-CoreList.png)](https://cpants.cpanauthors.org/dist/Module-Znuny-CoreList)
 [![GitHub issues](https://img.shields.io/github/issues/reneeb/Module-Znuny-CoreList.svg)](https://github.com/reneeb/Module-Znuny-CoreList/issues)
 [![CPAN Cover Status](https://cpancoverbadge.perl-services.de/Module-Znuny-CoreList-1.00)](https://cpancoverbadge.perl-services.de/Module-Znuny-CoreList-1.00)
