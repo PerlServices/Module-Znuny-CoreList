@@ -158,7 +158,7 @@ my $dist_copyright = $license_obj->notice;
 if ( open my $fh, '>', 'corelist' ) {
     print $fh q~package Module::Znuny::CoreList;
 
-# ABSTRACT: what modules shipped with versions of Znuny (>= 2.3.x)
+# ABSTRACT: what modules shipped with versions of Znuny (>= 6.0.30)
 
 use strict;
 use warnings;
