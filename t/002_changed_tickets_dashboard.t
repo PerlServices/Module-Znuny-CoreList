@@ -23,7 +23,7 @@ for my $version ( 0 .. 5 ) {
        'Kernel::Output::HTML::Dashboard::MyLastChangedTickets'
     );
 
-    is scalar @no_modules, 0, "Kernel::Output::HTML::Dashboard::MyLastChangedTickets wasn't shipped with Znuny 6.$minor";
+    is scalar @otrs_versions, 0, "Kernel::Output::HTML::Dashboard::MyLastChangedTickets wasn't shipped with Znuny 6.<minor>";
 }
 
 my @otrs_versions = Module::Znuny::CoreList->shipped(
@@ -31,6 +31,6 @@ my @otrs_versions = Module::Znuny::CoreList->shipped(
    'Kernel::Output::HTML::Dashboard::MyLastChangedTickets'
 );
 
-ok scalar @no_modules, "Kernel::Output::HTML::Dashboard::MyLastChangedTickets was shipped with Znuny 7";
+ok scalar @otrs_versions, "Kernel::Output::HTML::Dashboard::MyLastChangedTickets was shipped with Znuny 7";
 
 done_testing();
