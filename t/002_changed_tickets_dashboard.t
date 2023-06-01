@@ -17,14 +17,24 @@ use lib $dir;
 
 use Module::Znuny::CoreList;
 
-for my $version ( 0 .. 5 ) {
+for my $version ( 0 .. 3 ) {
     my @otrs_versions = Module::Znuny::CoreList->shipped(
        "6.$version.x",
        'Kernel::Output::HTML::Dashboard::MyLastChangedTickets'
     );
 
-    is scalar @otrs_versions, 0, "Kernel::Output::HTML::Dashboard::MyLastChangedTickets wasn't shipped with Znuny 6.<minor>";
+    is scalar @otrs_versions, 0, "Kernel::Output::HTML::Dashboard::MyLastChangedTickets wasn't shipped with Znuny 6.$version";
 }
+
+for my $version ( 4 .. 5 ) {
+    my @otrs_versions = Module::Znuny::CoreList->shipped(
+       "6.$version.x",
+       'Kernel::Output::HTML::Dashboard::MyLastChangedTickets'
+    );
+
+    ok scalar @otrs_versions, "Kernel::Output::HTML::Dashboard::MyLastChangedTickets was shipped with Znuny 6.$version";
+}
+
 
 my @otrs_versions = Module::Znuny::CoreList->shipped(
    '7.0.x',
