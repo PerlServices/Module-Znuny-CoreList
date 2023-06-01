@@ -2,26 +2,26 @@
 
 =head1 SYNOPSIS
 
- use Module::Znuny::CoreList;
+    use Module::Znuny::CoreList;
 
- my @znuny_versions = Module::Znuny::CoreList->shipped(
-    '6.0.x',
-    'Kernel::System::DB',
- );
+    my @znuny_versions = Module::Znuny::CoreList->shipped(
+       '6.0.x',
+       'Kernel::System::DB',
+    );
 
- # returns (6.0.31, 6.0.32, ...)
+    # returns (6.0.31, 6.0.32, ...)
 
- my @modules = Module::Znuny::CoreList->modules( '6.0.32' );
- my @modules = Module::Znuny::CoreList->modules( '6.1.x' );
+    my @modules = Module::Znuny::CoreList->modules( '6.0.32' );
+    my @modules = Module::Znuny::CoreList->modules( '6.1.x' );
 
- # methods to check for CPAN modules shipped with Znuny
+    # methods to check for CPAN modules shipped with Znuny
 
- my @cpan_modules = Module::Znuny::CoreList->cpan_modules( '6.0.x' );
+    my @cpan_modules = Module::Znuny::CoreList->cpan_modules( '6.0.x' );
 
- my @znuny_versions = Module::Znuny::CoreList->shipped(
-    '6.0.x',
-    'CGI',
- );
+    my @znuny_versions = Module::Znuny::CoreList->shipped(
+       '6.0.x',
+       'CGI',
+    );
 
 =head1 METHODS
 
@@ -36,7 +36,6 @@ returns a list of Znuny versions that ships a given module
 =head2 cpan_modules
 
 returns a list of CPAN modules that are shipped with a given Znuny version
-
 
 =head1 AUTHOR
 
