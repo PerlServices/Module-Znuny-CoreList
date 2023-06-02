@@ -293,6 +293,8 @@ sub shipped {
     my $version_re = $class->_version_re( $version );
     return if !$version_re;
 
+    return if !$module;
+
     my @versions_with_module;
 
     ZNUNYVERSION_SHIPPED:
